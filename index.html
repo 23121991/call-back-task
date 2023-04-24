@@ -4,13 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Callback-Hell-Task</title>
+    <style>
+     h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(75, 230, 168);
+        color:rgb(173, 57, 57);
+        height: 80vh;
+        }
+    </style>
+    <script>
+        setTimeout(function(){ document.getElementById('h1').innerHTML='10';}, 1000);
+        setTimeout(function(){ document.getElementById('h1').innerHTML='9';}, 2000);
+        setTimeout(function(){ document.getElementById('h1').innerHTML='8';}, 3000);
+        setTimeout(function(){ document.getElementById('h1').innerHTML='7';}, 4000);
+        setTimeout(function(){ document.getElementById('h1').innerHTML='6';}, 5000);
+        setTimeout(function(){ document.getElementById('h1').innerHTML='5';}, 6000);
+        setTimeout(function(){ document.getElementById('h1').innerHTML='4';}, 7000);
+        setTimeout(function(){ document.getElementById('h1').innerHTML='3';}, 8000);
+        setTimeout(function(){ document.getElementById('h1').innerHTML='2';}, 9000);
+        setTimeout(function(){ document.getElementById('h1').innerHTML='1';}, 10000);
+        setTimeout(function(){document.getElementById('h1').innerHTML='Happy Independence Day';}, 11000);
+
+   </script>
 </head>
 <body>
-    <div class="container">
-        <span id="span"></span>
-    </div>
-
-    <script src="script.js"></script>
+   
+        <h1 id="h1"> Hello all!...</h1>
+    
 </body>
 </html>
